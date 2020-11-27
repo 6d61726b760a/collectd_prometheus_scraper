@@ -3,6 +3,20 @@ import collectd
 from prometheus_client.parser import text_string_to_metric_families
 import requests
 
+#
+# collectd python
+#       https://collectd.org/documentation/manpages/collectd-python.5.shtml
+#       https://blog.dbrgn.ch/2017/3/10/write-a-collectd-python-plugin/
+#       https://github.com/dbrgn/collectd-python-plugins
+# collectd interval: 
+#       https://github.com/collectd/collectd/issues/2571
+# prometheus
+#       https://prometheus.io/docs/concepts/metric_types/
+#       https://prometheus.io/docs/concepts/data_model/
+#       https://prometheus.io/docs/practices/naming/
+# 
+
+
 def config_func(config):
     endpoint_set = False
     endpoint_set = False
